@@ -1,0 +1,23 @@
+
+.linkItem1:hover {
+    border-bottom: solid 5px yellow;  
+    color: yellow;
+    transition: 0.3s;
+}
+
+#seguir:hover {
+    border: 4px double whitesmoke;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#profile:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.buttonProfile:hover {
+    cursor: pointer;
+}

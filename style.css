@@ -1,0 +1,320 @@
+
+body {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #5E17EB;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border: #5E17EB 3px solid;
+}
+
+
+.grid-container {
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    grid-template-areas:
+    'icone  cima cima cima cima'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'lateral  conteudo conteudo conteudo conteudo'
+    'media media media media media';
+}
+
+/* Item 0 - Icone*/
+.item0 {
+    display: flex;
+    grid-area: icone;
+    height: 15vh;
+    background-color: #5E17EB;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.divItem0 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Major Mono Display' , monospace;
+    color: whitesmoke;
+}
+
+/* Item 1 - Lateral esquerdo*/
+.item1 { 
+    display: flex;
+    grid-area: lateral;
+    height: auto;
+    background-color: #5E17EB;
+    width: auto;
+    
+}
+.divItem1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    
+}
+.linkItem1 {
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Major Mono Display' , monospace;
+    align-items: center;
+    border-bottom: 5px double #fb00ff ;
+    transition: 0.3s;
+    
+}
+.labelIcones {
+    cursor: pointer;
+}
+#iconesItem1,#iconesItem2,#iconesItem3 {
+    display: flex;
+    width: 32px;
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+/* Item 2 - Superior*/
+.item2 { 
+    display: flex;
+    height: 15vh;
+    grid-area: cima;
+    background:linear-gradient(45deg, #5E17EB 10%, #fb00ff 100%); 
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+.divItem2 {
+    display: flex;
+    background-image: url(./svg/Play.svg);
+    cursor: pointer;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 64px;
+    height: 64px;
+}
+#tituloItem2 {
+    font-family: 'Righteous', cursive;
+    color: whitesmoke;
+    font-size: 32px;
+}
+.buttonItem2 {
+    display: flex;
+    background-color: whitesmoke;
+    border:  1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-style: solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 40px;
+    font-family: 'Righteous', cursive;
+    font-size: 24px
+    ;   
+}
+#profile {
+    display: flex;
+    background-color: black;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    margin-left: auto;
+    margin-right: 4em;
+    transition: 0.3s;
+}
+.imgProfile {
+    display: flex;
+    background-image: url(./svg/transferir.jfif);
+    border-radius: 2em;
+    background-size: cover;
+    border: 2px solid;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+}
+.buttonProfile {
+    background-color: black;
+    color: whitesmoke;
+    border: 0px;
+    font-family: 'Righteous', cursive;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius:2em;
+}
+
+/* Item 3 - Conteudo principal*/
+.item3 { 
+    grid-area: conteudo;
+    display: flex;
+    background-color: #ad92e4;
+    background-size:contain; 
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: auto;
+}
+.divItem3 {
+    display: flex;
+    margin: 10px;
+    background-color: white;
+    flex-wrap: wrap;
+    width: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.imgConteudo {
+    display: flex;
+    height: 300px;
+    min-width: 300px;
+    width: 300px;
+    background-image: url('./svg/Img1.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #fb00ff 5px solid;
+}
+.infoConteudo {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: calc(100% -  310px);
+    font-size: 32px;
+    font-family: 'Righteous', cursive;
+}
+#infoAutor {
+    background-color: #fb00ff;
+    text-align: center;
+    font-size: 64px;
+    padding-bottom: 8px;
+}
+#infoAlbum {
+    background-color: #5E17EB;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 8px;
+}
+#infoMusica {
+    display: flex;
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    justify-content: center;
+
+}
+#infoSubConteudo {
+    display: flex;
+    flex-direction: column;
+    background-color:whitesmoke;
+    width: auto;
+    height: auto;
+    padding-top: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+#infAutor {
+    font-size: 48px;
+    font-family: 'Major Mono Display', monospace;
+    border-bottom:dashed 5px;
+}
+#infGravadora {
+    padding-top: 2em;
+    font-size: 12px;
+    font-family: monospace;
+}
+#infDireitos {
+    padding-top: 0.5em;
+    font-size: 12px;
+    font-family: monospace;
+}
+#seguir {
+    background-color: whitesmoke;
+    border:  5px solid;
+    margin-top: 1em;
+    height: 40px;
+    width: 80px;
+    font-family: 'Righteous', cursive;
+    transition: 0.3s;
+}
+.listaConteudo {
+    display: flex;
+    background-color: #ad92e4;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin: 32px;
+}
+.tabbleConteudo {
+    font-family: 'Righteous', cursive;
+    height: 1em;
+    width: 100%;
+}
+.tdThead {
+    background-color: #5E17EB;
+    color: whitesmoke;
+    font-size:24px;
+    font-weight: lighter;
+    padding: 4px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.tdMain {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    margin-left: 1em;
+    font-size: 16px;
+    border: 1px solid #fb00ff
+}
+/* Item 4 - Controlador do player*/
+.item4 { 
+    display: flex;
+    width: 100%;
+    bottom: 0px;
+    grid-area: media;
+    height: 10vh;
+    background-color: #fb00ff
+}
+.divItem4 {
+    display: flex;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+#iconesItem11,#iconesItem22,#iconesItem33 {
+    width: 32px;
+}
+
+
