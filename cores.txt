@@ -1,0 +1,20 @@
+COR1
+    --cor1: #fb00ff;
+    --cor2: #5E17EB;
+    --cor3: #d0ff00;
+    --cor4: #ad92e4;
+    color: #2c2c2c;
+
+COR2
+    --cor1: #8b0000;
+    --cor2: #2c2c2c;
+    --cor3: #d0ff00;
+    --cor4: #360108;
+    color: #f5f5f5;
+
+
+
+    #tituloItem2
+
+
+

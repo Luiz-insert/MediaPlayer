@@ -2,24 +2,19 @@
 body {
     overflow: hidden;
 }
-
 ::-webkit-scrollbar {
 	width: 10px;
 }
-
 ::-webkit-scrollbar-track {
-    background-color: #5E17EB;
+    background-color: var(--cor2);
 }
-
 ::-webkit-scrollbar-thumb {
-    background-color: yellow;
-    border: #5E17EB 3px solid;
+    background-color: var(--cor3);
+    border: var(--cor2) 3px solid;
 }
-
-
-.grid-container {
+#grid-container {
     display: grid;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--cinzaEscuro);
     grid-template-areas:
     'icone  cima cima cima cima'
     'lateral  conteudo conteudo conteudo conteudo'
@@ -42,12 +37,7 @@ body {
 .item0 {
     display: flex;
     grid-area: icone;
-    height: 15vh;
-    background-color: #5E17EB;
-    width: auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+
 }
 .divItem0 {
     display: flex;
@@ -55,7 +45,12 @@ body {
     text-align: center;
     font-size: 40px;
     font-family: 'Major Mono Display' , monospace;
-    color: whitesmoke;
+    align-items: center;
+    color: var(--cinzaClaro);
+    width: 100%;
+    background-color: var(--cor2);
+    height: 15vh;
+    justify-content: center;
 }
 
 /* Item 1 - Lateral esquerdo*/
@@ -63,7 +58,7 @@ body {
     display: flex;
     grid-area: lateral;
     height: auto;
-    background-color: #5E17EB;
+    background-color: var(--cor2);
     width: auto;
     
 }
@@ -81,12 +76,12 @@ body {
     padding-bottom: 1.5em;
     margin-left: 1em;
     margin-right: 1em;
-    color: whitesmoke;
+    color: var(--cinzaClaro);
     cursor: pointer;
     text-decoration: none;
     font-family: 'Major Mono Display' , monospace;
     align-items: center;
-    border-bottom: 5px double #fb00ff ;
+    border-bottom: 5px double var(--cor1) ;
     transition: 0.3s;
     
 }
@@ -105,7 +100,7 @@ body {
     display: flex;
     height: 15vh;
     grid-area: cima;
-    background:linear-gradient(45deg, #5E17EB 10%, #fb00ff 100%); 
+    background:linear-gradient(45deg, var(--cor2) 10%, var(--cor1) 100%); 
     align-items: center;
     justify-content: start;
     width: 100%;
@@ -121,12 +116,12 @@ body {
 }
 #tituloItem2 {
     font-family: 'Righteous', cursive;
-    color: whitesmoke;
+    color: var(--cinzaClaro);
     font-size: 32px;
 }
 .buttonItem2 {
     display: flex;
-    background-color: whitesmoke;
+    background-color: var(--cinzaClaro);
     border:  1px;
     margin-left: 1px;
     margin-right: 1px;
@@ -137,12 +132,13 @@ body {
     height: 35px;
     width: 40px;
     font-family: 'Righteous', cursive;
-    font-size: 24px
-    ;   
+    font-size: 24px;
+    cursor: pointer; 
+    transition: 0.3s;  
 }
 #profile {
     display: flex;
-    background-color: black;
+    background-color: var(--cinzaEscuro);
     border-top-left-radius: 2em;
     border-bottom-left-radius: 2em;
     border-top-right-radius: 2em;
@@ -153,6 +149,7 @@ body {
 }
 .imgProfile {
     display: flex;
+    color: var(--cinzaEscuro);
     background-image: url(./svg/transferir.jfif);
     border-radius: 2em;
     background-size: cover;
@@ -162,8 +159,8 @@ body {
     height: 40px;
 }
 .buttonProfile {
-    background-color: black;
-    color: whitesmoke;
+    background-color: var(--cinzaEscuro);
+    color: var(--cinzaClaro);
     border: 0px;
     font-family: 'Righteous', cursive;
     border-top-right-radius: 2em;
@@ -174,7 +171,7 @@ body {
 .item3 { 
     grid-area: conteudo;
     display: flex;
-    background-color: #ad92e4;
+    background-color: var(--cor4);
     background-size:contain; 
     background-repeat: no-repeat;
     height: 75vh;
@@ -187,10 +184,9 @@ body {
     flex-wrap: wrap;
     width: auto;
     overflow-y: scroll;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;  
 }
-.imgConteudo {
+#imgConteudo {
     display: flex;
     height: 300px;
     min-width: 300px;
@@ -198,7 +194,7 @@ body {
     background-image: url('./svg/Img1.jfif');
     background-size: cover;
     background-repeat: no-repeat;
-    border: #fb00ff 5px solid;
+    border: var(--cor1) 5px solid;
 }
 .infoConteudo {
     display: flex;
@@ -209,21 +205,22 @@ body {
     font-family: 'Righteous', cursive;
 }
 #infoAutor {
-    background-color: #fb00ff;
+    background-color: var(--cor1);
+    color: var(--cinzaEscuro);
     text-align: center;
     font-size: 64px;
     padding-bottom: 8px;
 }
 #infoAlbum {
-    background-color: #5E17EB;
-    color: whitesmoke;
+    background-color: var(--cor2);
+    color: var(--cinzaClaro);
     text-align: center;
     padding-bottom: 8px;
 }
 #infoMusica {
     display: flex;
-    color: whitesmoke;
-    background-color: black;
+    color: var(--cinzaClaro);
+    background-color: var(--cinzaEscuro);
     text-align: center;
     font-size: 15px;
     font-family: monospace;
@@ -234,9 +231,9 @@ body {
 #infoSubConteudo {
     display: flex;
     flex-direction: column;
-    background-color:whitesmoke;
+    background-color: var(--cinzaClaro);
     width: auto;
-    height: auto;
+    height: 100%;
     padding-top: 16px;
     padding-left: 1em;
     padding-right: 1em;
@@ -245,19 +242,23 @@ body {
     font-size: 48px;
     font-family: 'Major Mono Display', monospace;
     border-bottom:dashed 5px;
+    color: var(--cinzaEscuro);
 }
 #infGravadora {
     padding-top: 2em;
     font-size: 12px;
     font-family: monospace;
+    color: var(--cinzaEscuro);
 }
 #infDireitos {
     padding-top: 0.5em;
     font-size: 12px;
     font-family: monospace;
+    color: var(--cinzaEscuro);
 }
 #seguir {
-    background-color: whitesmoke;
+    background-color: var(--cinzaClaro);
+    color: var(--cinzaEscuro);
     border:  5px solid;
     margin-top: 1em;
     height: 40px;
@@ -267,7 +268,7 @@ body {
 }
 .listaConteudo {
     display: flex;
-    background-color: #ad92e4;
+    background-color: var(--cor4);
     width: 100%;
     height: auto;
     justify-content: space-between;
@@ -279,8 +280,8 @@ body {
     width: 100%;
 }
 .tdThead {
-    background-color: #5E17EB;
-    color: whitesmoke;
+    background-color: var(--cor2);
+    color: var(--cinzaClaro);
     font-size:24px;
     font-weight: lighter;
     padding: 4px;
@@ -293,7 +294,7 @@ body {
     padding-left: 1em;
     margin-left: 1em;
     font-size: 16px;
-    border: 1px solid #fb00ff
+    border: 1px solid var(--cor1);
 }
 /* Item 4 - Controlador do player*/
 .item4 { 
@@ -302,15 +303,17 @@ body {
     bottom: 0px;
     grid-area: media;
     height: 10vh;
-    background-color: #fb00ff
+    background-color: var(--cor1);
 }
 .divItem4 {
     display: flex;
-    background-color: whitesmoke;
+    background-color: var(--cinzaClaro);
+    border-top: var(--cor1) 5px solid;
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 
 }
 #iconesItem11,#iconesItem22,#iconesItem33 {
