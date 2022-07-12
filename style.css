@@ -204,7 +204,7 @@ body {
     font-size: 32px;
     font-family: 'Righteous', cursive;
 }
-#infoAutor {
+#infoMusica {
     background-color: var(--cor1);
     color: var(--cinzaEscuro);
     text-align: center;
@@ -217,7 +217,7 @@ body {
     text-align: center;
     padding-bottom: 8px;
 }
-#infoMusica {
+#infoOuvintes {
     display: flex;
     color: var(--cinzaClaro);
     background-color: var(--cinzaEscuro);
@@ -244,13 +244,21 @@ body {
     border-bottom:dashed 5px;
     color: var(--cinzaEscuro);
 }
-#infGravadora {
-    padding-top: 2em;
+#infGravadora1 {
+    padding-top: 1em;
     font-size: 12px;
     font-family: monospace;
     color: var(--cinzaEscuro);
 }
-#infDireitos {
+
+#infGravadora2 {
+    padding-top: 0em;
+    font-size: 12px;
+    font-family: monospace;
+    color: var(--cinzaEscuro);
+}
+
+#infData {
     padding-top: 0.5em;
     font-size: 12px;
     font-family: monospace;
