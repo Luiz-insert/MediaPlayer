@@ -43,6 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    text-shadow: 3px 3px 3px var(--cor1);
     font-size: 40px;
     font-family: 'Major Mono Display' , monospace;
     align-items: center;
@@ -81,6 +82,7 @@ body {
     text-decoration: none;
     font-family: 'Major Mono Display' , monospace;
     align-items: center;
+    text-shadow: 1px 1px 1px  var(--cor1);
     border-bottom: 5px double var(--cor1) ;
     transition: 0.3s;
     
@@ -125,6 +127,7 @@ body {
     font-family: 'Righteous', cursive;
     color: var(--cinzaClaro);
     font-size: 32px;
+    text-shadow: 1px 1px 1px  var(--cor1);
 }
 .buttonItem2 {
     display: flex;
@@ -142,6 +145,7 @@ body {
     font-size: 24px;
     cursor: pointer; 
     transition: 0.3s;  
+    
 }
 #profile {
     display: flex;

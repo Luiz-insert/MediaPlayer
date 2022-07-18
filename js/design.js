@@ -48,6 +48,30 @@ function cor4 () {
     getComputedStyle(document.documentElement).getPropertyValue('color');
     document.documentElement.style.setProperty('color','#fff')
 }
+function cor5 () {
+    getComputedStyle(document.documentElement).getPropertyValue('--cor1');
+    document.documentElement.style.setProperty('--cor1','#545953');
+    getComputedStyle(document.documentElement).getPropertyValue('--cor2');
+    document.documentElement.style.setProperty('--cor2','#1D242A');
+    getComputedStyle(document.documentElement).getPropertyValue('--cor3');
+    document.documentElement.style.setProperty('--cor3','#d0ff00');
+    getComputedStyle(document.documentElement).getPropertyValue('--cor4');
+    document.documentElement.style.setProperty('--cor4','#2c2c2c');
+    getComputedStyle(document.documentElement).getPropertyValue('color');
+    document.documentElement.style.setProperty('color','#fff')
+}
+function cor6 () {
+    getComputedStyle(document.documentElement).getPropertyValue('--cor1');
+    document.documentElement.style.setProperty('--cor1','#44465B');
+    getComputedStyle(document.documentElement).getPropertyValue('--cor2');
+    document.documentElement.style.setProperty('--cor2','#271C2D');
+    getComputedStyle(document.documentElement).getPropertyValue('--cor3');
+    document.documentElement.style.setProperty('--cor3','#d0ff00');
+    getComputedStyle(document.documentElement).getPropertyValue('--cor4');
+    document.documentElement.style.setProperty('--cor4','#C1A2AA');
+    getComputedStyle(document.documentElement).getPropertyValue('color');
+    document.documentElement.style.setProperty('color','#2c2c2c')
+}
 
 function img1 () {
     document.getElementById('imgConteudo').style.backgroundImage = 'url(../svg/img1.jfif)';
@@ -60,5 +84,11 @@ function img3 () {
 }
 function img4 () {
     document.getElementById('imgConteudo').style.backgroundImage = 'url(../svg/img4.jfif)';
+}
+function img5 () {
+    document.getElementById('imgConteudo').style.backgroundImage = 'url(../svg/img5.jfif)';
+}
+function img6 () {
+    document.getElementById('imgConteudo').style.backgroundImage = 'url(../svg/img6.jfif)';
 }
 
