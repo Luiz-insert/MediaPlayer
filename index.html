@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Righteous&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="pseudo.css">
-    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pseudo.css">
+    <link rel="stylesheet" href="./css/color.css">
     <title>SAFE-ZONE</title>
 </head>
 <body>
@@ -54,14 +54,14 @@
                         
                     </div>
                     <div class="infoConteudo">
-                        <h1 id="infoMusica"></h1>
-                        <p id="infoAlbum"></p>
-                        <p id="infoOuvintes"></p>
+                        <h1 id="infoMusica">Em desenvolvimento</h1>
+                        <p id="infoAlbum">Futura profile page</p>
+                        <p id="infoOuvintes"> 9999 seguidores (quant de seguidores)</p>
                         <div id="infoSubConteudo">
-                            <p id="infAutor"></p>
-                            <p id="infGravadora1"></p>
-                            <p id="infGravadora2"></p>
-                            <p id="infData"></p>
+                            <p id="infAutor">?</p>
+                            <p id="infGravadora1"><a href="https://github.com/Luiz-insert/MediaPlayer/tree/master">GitHub - Luiz-insert</a> </p>
+                            <p id="infGravadora2"><a href="https://www.instagram.com/luiz_gusttav0o/">Instagram - @luiz_gusttav0o</a></p>
+                            <p id="infData">Todo o conteudo desta pagina tende a ser alterado, portanto não representa o produto final.</p>
                             <button id="seguir">Seguir</button>
                         </div>
                         
@@ -75,29 +75,29 @@
                                 <td class="tdThead">Album</td>
                                 <td class="tdThead">Duração</td>
                             </tr>
-                            <tr>
-                                <td class="tdMain">1</td>
-                                <td class="tdMain">Phonky Trap</td>
-                                <td class="tdMain">Single</td>
-                                <td class="tdMain">3min</td>
+                            <tr id="musica1" class="trMain">
+                                <td class="tdMain"><p id="pId1" class="pId"></p></td>
+                                <td class="tdMain"><p id="pTitulo1" class="pTitulo"></p></td>
+                                <td class="tdMain"><p id="pAlbum1" class="pAlbum"></p></td>
+                                <td class="tdMain"><p id="pDuracao1" class="pDuracao"></p></td>
                             </tr>
-                            <tr>
-                                <td class="tdMain">2</td>
-                                <td class="tdMain">?</td>
-                                <td class="tdMain">?</td>
-                                <td class="tdMain">2min</td>
+                            <tr id="musica2" class="trMain">
+                                <td class="tdMain"><p id="pId2" class="pId"></p></td>
+                                <td class="tdMain"><p id="pTitulo2" class="pTitulo"></p></td>
+                                <td class="tdMain"><p id="pAlbum2" class="pAlbum"></p></td>
+                                <td class="tdMain"><p id="pDuracao2" class="pDuracao"></p></td>
                             </tr>
-                            <tr>
-                                <td class="tdMain">3</td>
-                                <td class="tdMain">?</td>
-                                <td class="tdMain">?</td>
-                                <td class="tdMain">1min</td>
+                            <tr id="musica3" class="trMain">
+                                <td class="tdMain"><p id="pId3" class="pId"></p></td>
+                                <td class="tdMain"><p id="pTitulo3" class="pTitulo"></p></td>
+                                <td class="tdMain"><p id="pAlbum3" class="pAlbum"></p></td>
+                                <td class="tdMain"><p id="pDuracao3" class="pDuracao"></p></td>
                             </tr>
-                            <tr>
-                                <td class="tdMain">4</td>
-                                <td class="tdMain">?</td>
-                                <td class="tdMain">?</td>
-                                <td class="tdMain">1min</td>
+                            <tr id="musica4" class="trMain">
+                                <td class="tdMain"><p id="pId4" class="pId"></p></td>
+                                <td class="tdMain"><p id="pTitulo4" class="pTitulo"></p></td>
+                                <td class="tdMain"><p id="pAlbum4" class="pAlbum"></p></td>
+                                <td class="tdMain"><p id="pDuracao4" class="pDuracao"></p></td>
                             </tr>
                             <tr>
                                 <td class="tdMain">5</td>
@@ -159,17 +159,20 @@
             </div>  
             <div class="item4 ">
                 <div class="divItem4">
-                    <a href="" class="linkItem4">
-                        <img src="./svg/Back.svg" id="iconesItem11"></a>
-                    <a href="" class="linkItem4">
-                        <img src="./svg/Pause.svg" id="iconesItem22"></a>
-                    <a href="" class="linkItem4">
-                        <img src="./svg/Skip.svg" id="iconesItem33"></a>
+                    <button id="btnBack" class="linkItem4">
+                        <img id="imgItem4-1" class="imgItem4">
+                    </button>
+                    <button id="btnPlayPause" class="linkItem4">
+                        <img id="imgItem4-2" class="imgItem4">
+                    </button>
+                    <button id="btnSkip" class="linkItem4">
+                        <img id="imgItem4-3" class="imgItem4">
+                    </button>
                 </div>
             </div>
         </div>
-<script src="main.js"></script>
-<script src="cor.js"></script>
-<script src="control.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/design.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>

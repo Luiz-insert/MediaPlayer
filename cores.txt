@@ -16,5 +16,5 @@ COR2
 
     #tituloItem2
 
-
+quando musica1 for selecionado, botao de play troca ação para a mesma
 

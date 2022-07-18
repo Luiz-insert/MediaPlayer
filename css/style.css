@@ -91,8 +91,15 @@ body {
 #iconesItem1,#iconesItem2,#iconesItem3 {
     display: flex;
     width: 32px;
-    padding-right: 1em;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin-right: 1em;
     cursor: pointer;
+    background-color: var(--cinzaClaro);
+    border-radius: 0%;
+    border: 1px solid var(--cor1);
 }
 
 /* Item 2 - Superior*/
@@ -122,7 +129,7 @@ body {
 .buttonItem2 {
     display: flex;
     background-color: var(--cinzaClaro);
-    border:  1px;
+    border: 1px solid var(--cor1);
     margin-left: 1px;
     margin-right: 1px;
     border-style: solid;
@@ -150,7 +157,7 @@ body {
 .imgProfile {
     display: flex;
     color: var(--cinzaEscuro);
-    background-image: url(./svg/transferir.jfif);
+    background-image: url(../svg/transferir.jfif);
     border-radius: 2em;
     background-size: cover;
     border: 2px solid;
@@ -191,7 +198,8 @@ body {
     height: 300px;
     min-width: 300px;
     width: 300px;
-    background-image: url('./svg/Img1.jfif');
+    background-image: url(#);
+    background-color: var(--cinzaEscuro);
     background-size: cover;
     background-repeat: no-repeat;
     border: var(--cor1) 5px solid;
@@ -296,10 +304,19 @@ body {
     padding-left: 1em;
     padding-right: 1em;
 }
-.tdMain {
+
+.pId,
+.pTitulo
+,.pAlbum,
+.pDuracao {
+    display: flex;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 1em;
+}
+
+.tdMain {
+
     margin-left: 1em;
     font-size: 16px;
     border: 1px solid var(--cor1);
@@ -322,7 +339,50 @@ body {
     justify-content: center;
     align-items: center;
     transition: 0.3s;
+}
 
+.linkItem4 {
+    background-color: var(--cinzaClaro);
+    color: var(--cinzaEscuro);
+    border:  5px solid;
+    margin-top: 1em;
+    height: 40px;
+    width: 80px;
+    font-family: 'Righteous', cursive;
+    transition: 0.3s;
+}
+
+#imgItem4-1 {
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../svg/Back.svg);
+    mix-blend-mode:hard-light;
+    
+}
+#imgItem4-2 {
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../svg/Play.svg);
+    mix-blend-mode:hard-light;
+}
+#imgItem4-3 {
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../svg/Skip.svg);
+    mix-blend-mode:hard-light;
+}
+#divBarra {
+    width: 50px;
+    height: 50px;
 }
 #iconesItem11,#iconesItem22,#iconesItem33 {
     width: 32px;
